@@ -6,6 +6,7 @@
 GET     /                           controllers.Application.index()
 GET     /criar/:nome 				controllers.Application.create(nome: String)
 GET     /criar     				    controllers.Application.novo()
+GET     /tasks.json                 controllers.Application.getJson()
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)

@@ -2,6 +2,7 @@ package models;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 import org.joda.time.DateTime;
 
@@ -9,12 +10,9 @@ import play.data.format.Formats;
 import play.data.validation.Constraints;
 import play.db.ebean.Model;
 
-@Entity 
+@Entity
+@Table(name="tasks")
 public class Task extends Model {
-
-  /**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	public Task(String name, Boolean done, DateTime dueDate) {
 		this.name = name; this.done = done; this.dueDate = dueDate;

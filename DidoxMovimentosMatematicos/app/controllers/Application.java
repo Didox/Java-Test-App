@@ -9,6 +9,7 @@ import play.mvc.Controller;
 import play.mvc.Result;
 import views.html.index;
 import views.html.novo;
+import play.libs.Json;
 
 public class Application extends Controller {
   
@@ -19,6 +20,11 @@ public class Application extends Controller {
     
     public static Result novo(){
     	return ok(novo.render());
+    }
+    
+    public static Result getJson(){
+    	BeanList<Task> tasks = (BeanList<Task>) Task.find.all();
+    	return ok(Json.toJson(tasks));
     }
     
     public static Result create(String nome){
