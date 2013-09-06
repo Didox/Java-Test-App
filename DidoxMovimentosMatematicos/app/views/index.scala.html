@@ -1,6 +1,26 @@
-@(message: String)
+@(tasks: List[Task])
 
-@main("Welcome to Play 2.1") {
-    
-    @play20.welcome(message, style = "Java")
+@main("Primeira aplicacao em Play") {
+   <h1>
+   	Fazendo while de uma model
+   </h1>
+   <table>
+   	<tr>
+   		<th>
+   			nome
+   		</th>
+   		<th>
+   			data
+   		</th>
+   	</tr>
+	@for(task <- tasks) {
+	   	<tr>
+	   		<td>@task.name</td>
+	   		<td>@task.dueDate</td>
+	   	</tr>
+	}
+   </table>
+   
+   	<a href="/criar">criar novo</a>
+   	<div>Para criar um direto digitar /criar/algum nome</div>
 }
