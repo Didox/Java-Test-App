@@ -1,26 +1,8 @@
-@(tasks: List[Task])
-
-@main("Primeira aplicacao em Play") {
-   <h1>
-   	Fazendo while de uma model
-   </h1>
-   <table>
-   	<tr>
-   		<th>
-   			nome
-   		</th>
-   		<th>
-   			data
-   		</th>
-   	</tr>
-	@for(task <- tasks) {
-	   	<tr>
-	   		<td>@task.name</td>
-	   		<td>@task.dueDate</td>
-	   	</tr>
-	}
-   </table>
-   
-   	<a href="/criar">criar novo</a>
-   	<div>Para criar um direto digitar /criar/algum nome</div>
+@main("Tasks App", "home") {
+	<h1>Primeiro App em Play</h1>
+	
+	<p>
+		Projeto para estudar java usando play MVC clique <a href="/tasks">aqui</a>
+		para criar tasks
+	</p>
 }
