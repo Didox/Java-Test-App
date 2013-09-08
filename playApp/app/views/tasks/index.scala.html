@@ -10,12 +10,14 @@
 			<tr>
 				<th>nome</th>
 				<th>data</th>
+				<th>pronto?</th>
 				<th></th>
 			</tr>
 			@for(task <- tasks) {
 			<tr>
 				<td>@task.name</td>
 				<td>@task.dueDate.toString("dd/MM/yyyy")</td>
+				<td>@task.done</td>
 				<td width="60px"><a class="btn"
 					href="@routes.Tasks.editar(task.id)">Editar</a></td>
 				<td width="60px"><a class="btn btn-danger"

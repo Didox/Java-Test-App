@@ -1,22 +1,21 @@
 package controllers;
 
-import play.*;
-import play.mvc.*;
+import models.Task;
+import play.libs.Json;
+import play.mvc.Controller;
+import play.mvc.Result;
+import views.html.index;
 
-import views.html.*;
-import models.*;
+import com.avaje.ebean.common.BeanList;
 
 public class Application extends Controller {
   
     public static Result index() {
-    	Post post = new Post();
-    	post.post = "teste post";
-
-        return ok("rota index, tambem tenho a rota /about :" + post.post);
+    	return ok(index.render());
     }
-
-    public static Result about() {
-        return ok("about test");
+    
+    public static Result getJson(){
+    	BeanList<Task> tasks = (BeanList<Task>) Task.find.all();
+    	return ok(Json.toJson(tasks));
     }
-  
 }

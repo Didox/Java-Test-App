@@ -3,6 +3,7 @@ package controllers;
 import java.util.Map;
 
 import models.Task;
+import play.Logger;
 import play.data.Form;
 import play.mvc.Controller;
 import play.mvc.Result;
@@ -30,13 +31,12 @@ public class Tasks extends Controller {
 	public static Result update(Long id) {
 		try {
 			Task task = Task.find.byId(id);
-			Map<String, String> data = Form.form(Task.class).bindFromRequest()
-					.data();
+			Map<String, String> data = Form.form(Task.class).bindFromRequest().data();
 			task.name = data.get("name");
 			task.setDueDate(data.get("dueDate"));
 			task.done = data.get("done") == null ? false : true;
 			task.save();
-
+			
 			return redirect(routes.Tasks.index());
 		} catch (Exception erro) {
 			return badRequest("erro ao atualizar : " + erro.getMessage());
@@ -51,8 +51,7 @@ public class Tasks extends Controller {
 
 	public static Result criar() {
 		try {
-			Map<String, String> data = Form.form(Task.class).bindFromRequest()
-					.data();
+			Map<String, String> data = Form.form(Task.class).bindFromRequest().data();
 			/*
 			 * falar com o bibinha Form<Task> form =
 			 * Form.form(Task.class).bindFromRequest(); if(form.errors().size()
