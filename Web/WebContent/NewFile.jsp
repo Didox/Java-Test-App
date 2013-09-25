@@ -11,7 +11,11 @@
 <% 
 Carro carro = new Carro(); 
 carro.setNome("danilo");
+
 %>
+
+<h1> MYSQL: <%= FirstExample.conectar() %></h1>
+
 <h1> <%= carro.getNome() %></h1>
 </body>
 </html>
