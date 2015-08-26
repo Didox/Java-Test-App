@@ -1,20 +1,17 @@
 package controllers;
 
-import models.Task;
-import play.libs.Json;
-import play.mvc.Controller;
-import play.mvc.Result;
-import views.html.index;
+import play.*;
+import play.mvc.*;
 
-import com.avaje.ebean.common.BeanList;
+import views.html.*;
 
 public class Application extends Controller {
   
-    public static Result index() {
+    public Result index() {
     	return ok(index.render());
     }
     
-    public static Result getJson(){
+    public Result getJson(){
     	BeanList<Task> tasks = (BeanList<Task>) Task.find.all();
     	return ok(Json.toJson(tasks));
     }

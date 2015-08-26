@@ -1,0 +1,19 @@
+New log file opened at Wed Aug 26 09:10:10 BRT 2015 by 11011@leibniz.local
+Sending msg to client activator-845740f4-c492-4253-afad-3e431adf8ec7: DetachedLogEvent(LogMessage(debug,sbt server socket logs are in: /Users/didox/projects/java/Java-Test-App/DidoxMovimentosMatematicos/.sbtserver/connections/master.log))
+Sending msg to client activator-845740f4-c492-4253-afad-3e431adf8ec7: DetachedLogEvent(LogMessage(debug,sbt client logs are in: /Users/didox/projects/java/Java-Test-App/DidoxMovimentosMatematicos/.sbtserver/connections/activator-845740f4-c492-4253-afad-3e431adf8ec7.log))
+Sending msg to client activator-845740f4-c492-4253-afad-3e431adf8ec7: DetachedLogEvent(LogMessage(debug,sbt general server logs are in: /Users/didox/projects/java/Java-Test-App/DidoxMovimentosMatematicos/.sbtserver/master.log))
+Reading next message from client.
+Got request: ListenToEvents()
+Reading next message from client.
+Got request: ListenToBuildChange()
+Reading next message from client.
+Got request: SendSyntheticBuildChanged()
+Reading next message from client.
+Got request: KeyLookupRequest(discoveredMainClasses)
+Reading next message from client.
+Got request: KeyLookupRequest(mainClass)
+Reading next message from client.
+Got request: KillServerRequest()
+Reading next message from client.
+Got request: ExecutionRequest(compile)
+Reading next message from client.

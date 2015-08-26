@@ -3,31 +3,30 @@ package controllers;
 import java.util.Map;
 
 import models.Task;
-import play.data.Form;
-import play.mvc.Controller;
-import play.mvc.Result;
-import views.html.tasks.editar;
-import views.html.tasks.index;
-import views.html.tasks.novo;
+
+import play.*;
+import play.mvc.*;
+
+import views.html.*;
 
 import com.avaje.ebean.common.BeanList;
 
 public class Tasks extends Controller {
-	public static Result novo() {
+	public Result novo() {
 		return ok(novo.render());
 	}
 
-	public static Result editar(Long id) {
+	public Result editar(Long id) {
 		Task task = Task.find.byId(id);
 		return ok(editar.render(task));
 	}
 
-	public static Result index() {
+	public Result index() {
 		BeanList<Task> tasks = (BeanList<Task>) Task.find.all();
 		return ok(index.render(tasks));
 	}
 
-	public static Result update(Long id) {
+	public Result update(Long id) {
 		try {
 			Task task = Task.find.byId(id);
 			Map<String, String> data = Form.form(Task.class).bindFromRequest()
@@ -43,13 +42,13 @@ public class Tasks extends Controller {
 		}
 	}
 
-	public static Result apagar(Long id) {
+	public Result apagar(Long id) {
 		// new Task(id).delete(); // falar com o bibinha
 		Task.find.byId(id).delete();
 		return redirect(routes.Tasks.index());
 	}
 
-	public static Result criar() {
+	public Result criar() {
 		try {
 			Map<String, String> data = Form.form(Task.class).bindFromRequest()
 					.data();

@@ -1,0 +1,41 @@
+New log file opened at Wed Aug 26 09:05:09 BRT 2015 by 11011@leibniz.local
+Sending msg to client activator-a800f3f7-cfa0-4ef1-8975-acba3b737cdc: DetachedLogEvent(LogMessage(debug,sbt server socket logs are in: /Users/didox/projects/java/Java-Test-App/DidoxMovimentosMatematicos/.sbtserver/connections/master.log))
+Sending msg to client activator-a800f3f7-cfa0-4ef1-8975-acba3b737cdc: DetachedLogEvent(LogMessage(debug,sbt client logs are in: /Users/didox/projects/java/Java-Test-App/DidoxMovimentosMatematicos/.sbtserver/connections/activator-a800f3f7-cfa0-4ef1-8975-acba3b737cdc.log))
+Reading next message from client.
+Sending msg to client activator-a800f3f7-cfa0-4ef1-8975-acba3b737cdc: DetachedLogEvent(LogMessage(debug,sbt general server logs are in: /Users/didox/projects/java/Java-Test-App/DidoxMovimentosMatematicos/.sbtserver/master.log))
+Got request: ListenToEvents()
+Reading next message from client.
+Sending msg to client activator-a800f3f7-cfa0-4ef1-8975-acba3b737cdc: DetachedLogEvent(LogMessage(debug,> --initialize))
+Got request: ListenToBuildChange()
+Reading next message from client.
+Got request: SendSyntheticBuildChanged()
+Reading next message from client.
+Got request: KeyLookupRequest(discoveredMainClasses)
+Reading next message from client.
+Got request: KeyLookupRequest(mainClass)
+Reading next message from client.
+Got request: ExecutionRequest(compile)
+Reading next message from client.
+Sending msg to client activator-a800f3f7-cfa0-4ef1-8975-acba3b737cdc: (3,ReceivedResponse())
+Sending msg to client activator-a800f3f7-cfa0-4ef1-8975-acba3b737cdc: DetachedLogEvent(LogMessage(debug,> initialize))
+Sending msg to client activator-a800f3f7-cfa0-4ef1-8975-acba3b737cdc: DetachedLogEvent(LogMessage(debug,> onFailure load-failed))
+Sending msg to client activator-a800f3f7-cfa0-4ef1-8975-acba3b737cdc: DetachedLogEvent(LogMessage(debug,> boot))
+Sending msg to client activator-a800f3f7-cfa0-4ef1-8975-acba3b737cdc: DetachedLogEvent(LogMessage(debug,> reload))
+Sending msg to client activator-a800f3f7-cfa0-4ef1-8975-acba3b737cdc: DetachedLogEvent(LogMessage(debug,[Loading] Scanning directory /Users/didox/projects/java/Java-Test-App/DidoxMovimentosMatematicos/project))
+Sending msg to client activator-a800f3f7-cfa0-4ef1-8975-acba3b737cdc: DetachedLogEvent(LogMessage(debug,[Loading] Found non-root projects ))
+Sending msg to client activator-a800f3f7-cfa0-4ef1-8975-acba3b737cdc: DetachedLogEvent(LogMessage(debug,[Loading] Done in /Users/didox/projects/java/Java-Test-App/DidoxMovimentosMatematicos/project, returning: ()))
+Sending msg to client activator-a800f3f7-cfa0-4ef1-8975-acba3b737cdc: DetachedLogEvent(LogMessage(debug,deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))))))
+Sending msg to client activator-a800f3f7-cfa0-4ef1-8975-acba3b737cdc: DetachedLogEvent(LogMessage(debug,  :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.JUnitXmlReportPlugin)))
+Sending msg to client activator-a800f3f7-cfa0-4ef1-8975-acba3b737cdc: DetachedLogEvent(LogMessage(debug,sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)))
+Sending msg to client activator-a800f3f7-cfa0-4ef1-8975-acba3b737cdc: DetachedLogEvent(LogMessage(debug,  :: sorting:: found: List(sbt.plugins.CorePlugin) not found List(sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)))
+Sending msg to client activator-a800f3f7-cfa0-4ef1-8975-acba3b737cdc: DetachedLogEvent(LogMessage(debug,  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin) not found List(sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)))
+Sending msg to client activator-a800f3f7-cfa0-4ef1-8975-acba3b737cdc: DetachedLogEvent(LogMessage(debug,  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin) not found List(sbt.plugins.JUnitXmlReportPlugin)))
+Sending msg to client activator-a800f3f7-cfa0-4ef1-8975-acba3b737cdc: DetachedLogEvent(LogMessage(debug,  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin) not found List()))
+Sending msg to client activator-a800f3f7-cfa0-4ef1-8975-acba3b737cdc: DetachedLogEvent(LogMessage(debug,  :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)))
+Sending msg to client activator-a800f3f7-cfa0-4ef1-8975-acba3b737cdc: DetachedLogEvent(LogMessage(debug,[Loading] Done in /Users/didox/projects/java/Java-Test-App/DidoxMovimentosMatematicos/project, returning: (didoxmovimentosmatematicos-build)))
+Sending msg to client activator-a800f3f7-cfa0-4ef1-8975-acba3b737cdc: DetachedLogEvent(LogMessage(info,Loading project definition from /Users/didox/projects/java/Java-Test-App/DidoxMovimentosMatematicos/project))
+Sending msg to client activator-a800f3f7-cfa0-4ef1-8975-acba3b737cdc: DetachedLogEvent(LogMessage(debug,Running task... Cancel: sbt.TaskCancellationStrategy$Null$@610a4815, check cycles: false))
+Sending msg to client activator-a800f3f7-cfa0-4ef1-8975-acba3b737cdc: DetachedLogEvent(LogMessage(info,Updating {file:/Users/didox/projects/java/Java-Test-App/DidoxMovimentosMatematicos/project/}didoxmovimentosmatematicos-build...))
+Sending msg to client activator-a800f3f7-cfa0-4ef1-8975-acba3b737cdc: DetachedLogEvent(LogMessage(debug,Other repositories:))
+Sending msg to client activator-a800f3f7-cfa0-4ef1-8975-acba3b737cdc: DetachedLogEvent(LogMessage(debug,Default repositories:))
+Sending msg to client activator-a800f3f7-cfa0-4ef1-8975-acba3b737cdc: DetachedLogEvent(LogStdOut(Waiting for lock on /Users/didox/.ivy2/.sbt.ivy.lock to be available...))
